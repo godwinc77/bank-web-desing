@@ -4,27 +4,36 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>GTB</title>
         <link rel="stylesheet" href="css/gtbs.css">
-        <links rle="shortcut icon" href="img/Annotation 2022-04-19 141340.png" type="image/x-icon">
+        <link rel="stylesheet" media="screen and (max-width:320px)" href="css/bank.css">
+        <link rel="shortcut icon" href="img/Annotation 2022-04-19 141340.png" type="image/x-icon">
         <script src="https://kit.fontawesome.com/0cd43d1304.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <nav>
             <div class="pin">
-                <ul id="new">
-                    <li><a href="#">Locate</a></li>
-                    <li><a href="#">Media</a></li>
-                    <li><a href="#">Help Center</a></li>
-                    <li><a href="#">Security</a></li>
-                    <li><i class="fa-solid fa-magnifying-glass icon"></i></li>
-                    <div class="value">
-                        <li id="value1"><a href="#">Online Banking Login</a></li> 
+                <ul id="navList">
+                    <div id="icons">
+                        <i class="fa-solid fa-bars" ></i>
+                        <i class="fa-solid fa-magnifying-glass look"></i>
+                    </div>
+                    <div class="search-con">
+                        <input class="search" type="text">
+                        <i class="fa-solid fa-x cancel"></i>
+                    </div>
+                    <li class="item"><a href="#">Locate</a></li>
+                    <li class="item"><a href="#">Media</a></li>
+                    <li class="item"><a href="#">Help Center</a></li>
+                    <li class="item"><a href="#">Security</a></li>
+                    <li class="item"><i class="fa-solid fa-magnifying-glass icon"></i></li>
+                    <div class="lilast">
+                        <li><a href="#">Online Banking Login</a></li> 
                     </div>
                     
                 </ul>
-
-                <ul id="new1">
+            
+                <ul id="navListLast">
                     <i class="fa-solid fa-house"></i>
                     <li><a href="#">Personal Banking</a></li>
                     <li><a href="#">Business  Banking</a></li>
@@ -139,7 +148,24 @@
                 </div>
             </div>
         </section>
+        <footer>
+            <div class="foot">
+                <p>© 2022 GTB All Rights Reserved.</p>
+            </div>
+            <div class="foot">
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </div>
+            <div id="last">
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </div>
 
-        <script src="bank.js"></script>
+        </footer>
+        <script src="js/bank.js"></script>
+        <script src="js/mobile.js"></script>
+
     </body>
 </html>

@@ -2,13 +2,40 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0px;
     padding: 0px;
+    
 }
 nav{
     border: solid 3px red;
     display: flex;
-    border: none;   
+    border: none;
+    width: 50%;   
 }
-#new {
+.search{
+    background-color: inherit;
+    width: 60%;   
+}
+.search-con{
+    position: absolute;
+    left: 100px;
+    width: 100%;
+    transform:skew(30deg);
+    display: none;
+}
+.cancel{
+    color: white;
+}
+.look{
+    visibility: hidden;
+}
+
+.icon:hover{
+    cursor: pointer;
+}
+
+.fa-bars{
+    visibility: hidden;
+}
+#navList {
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -20,31 +47,32 @@ nav{
     background-color: rgb(230, 57, 0);  
     text-decoration: none;
     margin-left: -20px;
+    height: 40px;
 }
-#new li{
+#navList li{
     margin-left: 30px;
     font-size: small;
-  transform: skew(30deg); 
-  padding: 10px;
-  font-weight: bold;
-  color: white;
+    transform: skew(30deg); 
+    padding: 10px;
+    font-weight: bold;
+    color: black;
 }
-#new li a{
+#navList li a{
     text-decoration: none;
     color: white;
 }
-.value{
+.lilast{
     transform: skew(-5deg, 0deg);
     background-color: rgb(153, 38, 0);
     position: absolute;
     right: 0px;
 }
-.value li{
+.lilast li{
     border: rgb(153, 38, 0) 1px;
     text-align: right;
     transform: skew(30deg, 0deg);
 }
-#new1{
+#navListLast{
     display: flex;
     list-style: none;
     border: solid 3px red;
@@ -54,19 +82,19 @@ nav{
     border: none;
     text-decoration: none;
 }
-#new1 li{
+#navListLast li{
     margin-left: 20px;
     font-size: medium;
     font-weight: bold;
     color: rgb(13, 13, 13);
 }  
-#new1 li a{
+#navListLast li a{
     text-decoration: none;
     color:rgb(13, 13, 13);
     padding-bottom: 10px;
     border-bottom: 4px solid white;
 }
-#new1 li a:hover{
+#navListLast li a:hover{
     border-bottom: 4px solid rgb(230, 57, 0);
     padding-bottom: 10px;
     color: rgb(153, 38, 0);
@@ -80,117 +108,117 @@ nav{
 }
 /* Banner sexction*/
 .banner{
-      background-image: url("../img/istockphoto-533498965-170667a.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: flex;
-      padding-left: 100px;
-      height: 500px;
+    background-image: url("../img/istockphoto-533498965-170667a.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding-left: 100px;
+    height: 500px;
 }
 #head{
-    color: rgb(230, 57, 0);
-    font-size: 50px;
-    margin-bottom:0px ;
-    margin-top: 0px;
-    font-weight: normal;
+  color: rgb(230, 57, 0);
+  font-size: 50px;
+  margin-bottom:0px ;
+  margin-top: 0px;
+  font-weight: normal;
 }
 #header{
-    margin-bottom: 0px;
-    margin-top: 0px;
-    color: rgb(204, 0, 0);
-    font-size: 50px;
-    font-weight: normal;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  color: rgb(204, 0, 0);
+  font-size: 50px;
+  font-weight: normal;
 }
 #form p{
-    text-align: left;
-    color: rgb(255, 153, 0);
-    justify-content: center;
+  text-align: left;
+  color: rgb(255, 153, 0);
+  justify-content: center;
 }
 #form{
-      width: 30%;
-  }
+    width: 30%;
+}
 #form ul{
-    border: rgb(230, 57, 0);
-    background-color: rgb(204, 0, 0);
-    width: 25%;
-    padding: 10px;
-    list-style:none ;
-  }
+  border: rgb(230, 57, 0);
+  background-color: rgb(204, 0, 0);
+  width: 25%;
+  padding: 10px;
+  list-style:none ;
+}
 #form ul a{
-     text-decoration: none;
-     color: rgb(255, 153, 0);
-     list-style: none;    
+   text-decoration: none;
+   color: rgb(255, 153, 0);
+   list-style: none;    
 }
 #text{
-    margin-left: 45%;
-    list-style: none;
+  margin-left: 45%;
+  list-style: none;
 }
 #text1{
-    border: solid 2px rgb(255, 77, 77);
-    background-color: rgb(255, 77, 77);
-    width: 110%;
-    margin-top: 20px;
-    height: 60px;
+  border: solid 2px rgb(255, 77, 77);
+  background-color: rgb(255, 77, 77);
+  width: 110%;
+  margin-top: 20px;
+  height: 60px;
 }
 #text1 h2{
-    text-align: center;
-    font-size: medium;
-    color: rgb(204, 0, 0);
+  text-align: center;
+  font-size: medium;
+  color: rgb(204, 0, 0);
 }
 #text2{
-    border: solid 2px rgb(255, 77, 77);
-    background-color: rgb(255, 77, 77);
-    width: 110%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  border: solid 2px rgb(255, 77, 77);
+  background-color: rgb(255, 77, 77);
+  width: 110%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 #text2 li a{
-    text-decoration: none;
-    color: rgb(255, 153, 0);
-    padding-bottom: 10px;
-    border-bottom: 4px solid rgb(255, 77, 77);
+  text-decoration: none;
+  color: rgb(255, 153, 0);
+  padding-bottom: 10px;
+  border-bottom: 4px solid rgb(255, 77, 77);
 }
 #text3{
-    border: solid 2px rgb(255, 77, 77);
-    background-color: rgb(255, 77, 77);
-    width: 110%;
-    display: flex;
-    flex-direction: column;
-    height: 30%;
+  border: solid 2px rgb(255, 77, 77);
+  background-color: rgb(255, 77, 77);
+  width: 110%;
+  display: flex;
+  flex-direction: column;
+  height: 30%;
 }
 #log{
-    border: solid 1px rgb(230, 57, 0) ;
-    background-color: rgb(230, 57, 0);
-    padding-left: 150px;
-    margin-top: 20px;
-    padding: 10px;
-    margin-left: 40px;
-    margin-right: 40px;   
+  border: solid 1px rgb(230, 57, 0) ;
+  background-color: rgb(230, 57, 0);
+  padding-left: 150px;
+  margin-top: 20px;
+  padding: 10px;
+  margin-left: 40px;
+  margin-right: 40px;   
 }
 #log a{
-    color: rgb(255, 153, 0);
-    text-decoration: none;
-    padding-left: 50px;
-    padding-right: 30px;
+  color: rgb(255, 153, 0);
+  text-decoration: none;
+  padding-left: 50px;
+  padding-right: 30px;
 }
 #text3 div{
-    display: flex;
-    flex-direction: row;
-    margin-top: 10px;
-    padding-left: 30px;  
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  padding-left: 30px;  
 }
 #text3 div li a{
-    font-size: small;
-    margin-left:30px ;
-    text-decoration: none;
-    color: rgb(255, 153, 0)
+  font-size: small;
+  margin-left:30px ;
+  text-decoration: none;
+  color: rgb(255, 153, 0)
 }
 #text2 li a:hover{
-    border-bottom: 4px solid rgb(230, 57, 0);
-    padding-bottom: 0px;
-    color: rgb(153, 38, 0);
-    transition: 1s;
+  border-bottom: 4px solid rgb(230, 57, 0);
+  padding-bottom: 0px;
+  color: rgb(153, 38, 0);
+  transition: 1s;
 }
 
 /* Gallery*/
@@ -240,6 +268,7 @@ nav{
 .boton:hover{
     width: 180px;
     transform: 3s;
+    width: 250px;
 }
 .boton i{
     font-size: 50px;
@@ -252,10 +281,54 @@ nav{
 }
 
 .boton span{
-    width: 250px;
+    width: 80px;
     color: white;
     margin: auto 0px;
     text-align: unset;
+    padding-left: 20px;   
+}
+
+/* footer*/
+footer{
+    display: flex;
+    border: solid 2px rgb(204, 0, 0);
+    background-color: rgb(204, 0, 0);
+    padding: 40px;
+    margin-left: -10px;
+    padding-left: 200px;
+
+}
+.foot{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+}
+.foot li{
+    padding-top: 15px;
+}
+.foot li a{
     padding-left: 20px;
+    text-decoration: none;
+    color: white;
+}
+#last{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    margin-left: 150px;
+   
+}
+#last li{
+    padding: 5px;
+}
+#last li i{
+    color: black;
+    border: solid 2px rgb(204, 0, 0);
+    border-radius: 150px;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(255, 153, 0);
+
     
 }
