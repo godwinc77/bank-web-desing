@@ -8,7 +8,7 @@ nav{
     border: solid 3px red;
     display: flex;
     border: none;
-    width: 50%;   
+    width: 100%;   
 }
 .search{
     background-color: inherit;
@@ -114,6 +114,7 @@ nav{
     display: flex;
     padding-left: 100px;
     height: 500px;
+    width: 100%;
 }
 #head{
   color: rgb(230, 57, 0);
@@ -222,6 +223,9 @@ nav{
 }
 
 /* Gallery*/
+.gallery{
+    width: 100%;
+}
 .gallery .head{
     text-align: center;
 }
@@ -296,6 +300,7 @@ footer{
     padding: 40px;
     margin-left: -10px;
     padding-left: 200px;
+    width: 100%;
 
 }
 .foot{
