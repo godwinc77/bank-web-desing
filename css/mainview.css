@@ -31,7 +31,15 @@ nav{
 .icon:hover{
     cursor: pointer;
 }
-
+.delete{
+    visibility: hidden;
+}
+.find{
+    display: none;
+}
+.erase{
+    visibility: hidden;
+}
 .fa-bars{
     visibility: hidden;
 }
@@ -115,6 +123,7 @@ nav{
     padding-left: 100px;
     height: 500px;
     width: 100%;
+    position: relative;
 }
 #head{
   color: rgb(230, 57, 0);
