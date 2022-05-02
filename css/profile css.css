@@ -1,0 +1,394 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+}
+
+.profile{
+    width: 100%;
+    border: solid 2px black;  
+    border: none;
+}
+.profileHead{
+    width: 30%;
+    height: 200px;
+    background-color: rgb(77, 77, 77);
+    display: flex;
+    padding-left: 20%;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-left: 2%;
+}
+.profileHead img{
+    width: 30%;
+    height: 70%;
+    border: solid 2px black;
+    margin-top: 2%;
+    border-radius:80% ;
+    margin-left: -60%;
+    border: none;
+    
+}
+.profileHead .row{
+    padding-top: 13%;
+    border: solid 2px red;
+    width: 70%;
+    border: none;
+}
+.profileHead .row #profileHead1{
+    border: solid 2px red;
+    width: 150%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    
+}
+.profileHead .row #profileHead1 p{
+    margin-top: 0%;
+    padding-left: 3%;
+    width: 20%;
+    font-weight: 500;
+    border: solid 2px black;
+    font-size: 150%;
+    height: 50px;
+    border: none;
+    color: white;
+    
+}
+.profileHead  .row #profileHead2{
+    border: solid 2px black;
+    margin-left: 10%;
+    width: 70%;
+    height: 93px;
+    margin-top: 3%;
+    padding-left: 3%;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+
+}
+.profileHead  .row #profileHead2 h3{
+    font-size: 90%;
+    border: solid 2px black;
+    border: none;
+    margin-top: 4%;
+    color: white;
+}
+.profileHead  .row #profileHead2 p{
+    font-size: 150%;
+    border: solid 2px black;
+    margin-top: -5%;
+    border: none;
+    color: white;
+}
+/* Navigation */
+.navigation{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 600px;
+    border: solid 2px black;
+    
+}
+.navlist{
+    border: solid 2px black;
+    width: 20%;
+    height: 400px;
+    margin-left: 2%;
+    margin-top: 1%;
+    border-radius: 10px;
+    text-decoration: none;
+    list-style: none;
+    background-color: rgb(77, 0, 153);
+    position: relative;
+}
+.navlist ul{
+    list-style: none;
+    justify-content: center;
+    padding-left: 7%;
+}
+.navlist ul li{
+    margin-top: 4%;
+    font-size: 120%;
+    font-weight: 500;
+    border: solid 1px rgb(247, 245, 245);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    border-radius: 10px;;
+    display: flex;
+    flex-direction: row;
+}
+.navlist ul li p{
+    margin-left: 5%;
+    margin-top: 6%;
+}
+.navlist ul li :hover{
+    cursor: pointer;
+    color: gray;
+    transition: 0.5s;
+    border: solid 1px white;
+    border-radius: 10px;
+    transition: 1s;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+  
+/* navlist icon */
+.navlist ul li .fa-angle-right{
+    margin-left: 5%;
+    margin-top: 8%;
+    height: 2%;
+}
+.navlist ul li .bank{
+    margin-left: 5%;
+    margin-top: 8%;
+}
+/** navlist icon **/
+.dashboard{
+    border: solid 2px black;
+    width: 75%;
+    height: 441px;
+    margin-left:1%;
+    margin-top: 1%;
+    border-radius: 10px;
+    background-color: rgb(77, 0, 153);
+}
+.dashboard h2{
+    padding-left: 2%;
+    color: antiquewhite;
+}
+.dashboard .dashlist{
+    border: solid 2px blue;
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    background-color: rgba(128, 128, 128, 0.8);
+    border: none;
+    border-radius: 10px;
+    margin-left: 2%;
+
+}
+.dashboard .dashlist .balance{
+    margin-left: 20%;
+}
+.dashboard .dashlist .balance h3{
+    color: mintcream;
+}
+.dashboard .dashlist .balance p{
+    font-weight: bold;
+}
+.outcome{
+    background-color: rgba(128, 128, 128, 0.8);
+    width: 50%;
+    height: 250px;
+    position: relative;
+    border-radius: 10px;
+    margin-left: 2%;
+}
+.outcome h3{
+    color: white;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+.outcome .quickTransaction{
+    display: flex;
+    flex-direction: row;
+    border: solid 2px gray;
+    overflow: scroll;
+    width: 80%;
+    border: none;
+    margin-left: 18%;
+}
+.outcome .quickTransaction .debit{
+    border: solid 2px rgba(128, 128, 128, 0.8);
+    width: 15%;
+    height: 30%;
+    text-align: center;
+    margin-left: 13%;
+    border-radius: 10%;
+    background-color: rgba(128, 128, 128, 0.8);
+    flex-shrink: 0;
+}
+.outcome  #manual{
+    position: absolute;
+    border: solid 2px white;
+    width: 15%;
+    height: 140px;
+    left: 1%;
+    top: 30%;
+    border-radius: 10%;
+    background-color: rgba(128, 128, 128, 0.8);
+}
+.outcome  #manual p{
+    padding-top: 10%;
+    padding-left: 25%;
+    color: white;
+}
+.outcome  #manual i{
+    font-size: 200%;
+    margin-left: 30%;
+    margin-top: 50%;
+    color: white;
+}
+
+.outcome .quickTransaction .debit p{
+    color: white;
+
+}
+.outcome .quickTransaction .debit img{
+    width: 100%;
+    height: 50%;
+    padding-top: 3%;
+    border-radius: 10%;
+}
+/** Navigation **/
+/* Social */
+.social{
+    width: 100%;
+    height: 500px; 
+    border: solid 2px yellow;
+    border: none;
+}
+.social .sociallist{
+    border: solid 2px wheat;
+    width: 0%;
+    height: 441px;
+    border-radius: 10px;
+    background-color: rgb(128, 128, 128);
+    position: absolute;
+    top: 319px;
+    left: 372px;
+    border: none;
+    overflow: scroll hidden;
+}
+
+.social .sociallist h3{
+    margin-top: 0%;
+    margin-left: 1%;
+    color: white;
+}
+.social .sociallist .bills ul{
+    list-style: none;
+}
+.social .sociallist .bills ul li{
+    margin-left: 3%;
+    margin-top: 4%;
+    
+}  
+.social .sociallist .bills ul li a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 120%;
+    color: white;
+}
+.social .sociallist .bills ul li .billsicon{
+    margin-right: 2%;
+    font-size: 150%;
+    color: white;
+}
+
+/** Social **/
+/* Transition */
+.history{
+    width: 100%;
+    height: 0px;
+   
+    
+    
+}
+.transition{
+    width: 0%;
+    border: solid 2px black;
+    height: 61%;
+    margin-top: 2%;
+    margin-left: 1%;
+    border-radius: 10px;
+    background-color: rgb(128, 128, 128);
+    overflow: scroll;
+    position: absolute;
+    top: 286px;
+    left: 356px;
+    border: none;
+}
+.transition h2{
+    padding-left: 1%;
+}
+.transition p{
+    padding-left: 3%;
+    font-weight: 500;
+}
+.transition ul{
+    padding-right: 3%; 
+     
+}
+.transition .time{
+    margin-top: 1%;
+   border: solid 2px rgb(77, 77, 77);
+   border-radius: 10px;
+}
+.transition .time p{
+    font-size: 70%;
+    margin-top: 0%;
+    padding-left: 1%;
+    
+}
+.transition .time .listli{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.transition .time .listli .word{
+    padding-left: 1%;
+    width: 95%;
+    font-weight: 500;
+}
+.transition .time .listli .num{ 
+    padding-left: 2%;
+}
+/** Transition **/
+/** Transfer **/
+.transfer{
+    border: solid 2px black;
+    width: 96%;
+    height: 340px;
+    border-radius: 10px;
+}
+.transfer .transferdiv{
+    width: 0%;
+    height: 441px;
+    border-radius: 10px;
+    background-color: rgb(128, 128, 128);
+    overflow: scroll hidden;
+    position: absolute;
+    top: 319px;
+    left: 372px;
+    
+}
+.transfer h2{
+    margin-left: 1%;
+}
+.transfer .transferdiv .transferul{
+    list-style: none;
+    
+}
+.transfer .transferdiv .transferul .content{
+    margin-left: 1%;
+    font-weight: 700;
+    margin-top: 1%;
+    color: white;
+}
+.transfer .transferdiv .transferul .test{
+    width: 30%;
+    height: 20px;
+    border-radius: 10px;
+}
+/* Transfer */
