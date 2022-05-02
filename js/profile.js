@@ -18,55 +18,6 @@ const profilename = document.getElementById("profile1")
 const remove4 = document.getElementsByClassName("erase4")[0]
 const profilediv = document.getElementsByClassName("managementdiv")[0]
 
-/**Social */
-function openSocial(){
-    
-    socials.style.width ="60%"
-    socials.style.transition = "1s"
-    closeTransition()
-    closeTransfer()
-    closeProfile()
-}
-function closeSocial(){
-    socials.style.width ="0%"
-    socials.style.transition = "1s"
-}
-/**Transition */
-function openTransition(){
-    transitionli.style.width ="60%"
-    transitionli.style.transition = "1s"
-    closeSocial()
-    closeTransfer()
-    closeProfile()
-}
-function closeTransition(){
-    transitionli.style.width ="0%"
-    transitionli.style.transition = "1s"
-}
-/**Transfer*/
-function openTransfer(){
-    transferli.style.width ="60%"
-    transferli.style.transition = "1s"
-    closeTransition()
-    closeSocial()
-    closeProfile()
-}
-function closeTransfer(){
-    transferli.style.width ="0%"
-    transferli.style.transition = "1s"
-}
-/**Profile */
-function openProfile(){
-    profilediv.style.width = "60%"
-    profilediv.style.transition = "1s"
-    closeTransfer()
-    closeTransition()
-    closeSocial()
-}
-function closeProfile(){
-    profilediv.style.width = "0%"
-    profilediv.style.transition = "1s"
-}
 
 /**Social */
 socialul.addEventListener("click",openSocial)

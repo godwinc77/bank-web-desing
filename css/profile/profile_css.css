@@ -79,12 +79,10 @@ body{
     color: white;
 }
 /* Navigation */
-.navigation{
+nav{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 600px;
-    
 }
 .navlist{
     width: 20%;
@@ -147,7 +145,6 @@ body{
 /** navlist icon **/
 .dashboard{
     width: 75%;
-    height: 441px;
     margin-left: 23px;
     margin-top: 1%;
     border-radius: 10px;
@@ -246,39 +243,26 @@ body{
 /* Social */
 .social{
     width: 100%;
-    height: 0px;
-    border: solid 2px yellow;
-    border: none;
-}
-.social .sociallist{
     border: solid 2px wheat;
-    width: 0%;
-    height: 441px;
-    border-radius: 10px;
     background-color: rgb(153, 31, 0);
-    position: absolute;
-    top: 316px;
-    left: 372px;
-    border: none;
-    overflow: scroll;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    
 }
 
-.social .sociallist h3{
+
+.social h3{
     margin-top: 0%;
     margin-left: 1%;
     color: white;
 }
-.social .sociallist .bills ul{
+.social .bills ul{
     list-style: none;
 }
-.social .sociallist .bills ul li{
+.social .bills ul li{
     margin-left: 3%;
     margin-top: 4%;
     
 }  
-.social .sociallist .bills ul li a{
+.social .bills ul li a{
     text-decoration: none;
     font-weight: 700;
     font-size: 120%;
@@ -294,11 +278,9 @@ body{
 /* Transition */
 .history{
     width: 100%;
-    height: 0px;
-   
-    
-    
+    height: 0px; 
 }
+
 .transition{
     width: 0%;
     border: solid 2px black;
@@ -396,9 +378,7 @@ body{
 /* Transfer */
 /* Profile*/
 .management{
-    border: 2px solid black;
-    width: 100%;
-    height: 300px;
+    
 
 }
 .management .managementdiv{
