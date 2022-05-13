@@ -1,33 +1,107 @@
-/**Social */
-const socialul = document.getElementById("social1")
-const socials = document.getElementsByClassName("sociallist")[0]
-const remove = document.getElementsByClassName("erase1")[0]
-const socialli =document.getElementsByClassName("socialdiv")[0]
+const nav_list = document.getElementsByTagName("ul")[0]
+const over_view = document.getElementById("overview1")
+const socialclick = document.getElementById("social1")
+const dashboardview  = document.getElementsByClassName("overview")[0]
+const quickTranscationView = document.getElementsByClassName("quick-transaction")[0]
+const socialview = document.getElementsByClassName("social")[0]
+const overview = document.getElementById("overview1")
+const historyList = document.getElementsByClassName("history")[0]
+const transactionlick = document.getElementById("transition1")
+const transferclick = document.getElementById("transfer1")
+const transferList = document.getElementsByClassName("transfer")[0]
+const profileclick = document.getElementById("profile1")
+const profilelist = document.getElementsByClassName("managementdiv")[0]
+function siblingRadius(){
+    var top_sib = this.previousElementSibling
+    var bottom_sib = this.nextElementSibling
 
-/**Transition */
-const trans =document.getElementById("transition1")
-const remove2 =document.getElementsByClassName("erase2")[0]
-const transitionli = document.getElementsByClassName("transition")[0]
+    if(top_sib !=null){
+        top_sib.style.borderBottomRightRadius = "20px"
+        }
+        bottom_sib.style.borderTopRightRadius = "20px"
+}
+function reverseSiblingRadius(){
+    var top_sib = this.previousElementSibling
+    var bottom_sib = this.nextElementSibling
 
-/**Transfer*/
-const send =document.getElementById("transfer1")
-const remove3 =document.getElementsByClassName("erase3")[0]
-const transferli = document.getElementsByClassName("transferdiv")[0]
-/**Profile */
-const profilename = document.getElementById("profile1")
-const remove4 = document.getElementsByClassName("erase4")[0]
-const profilediv = document.getElementsByClassName("managementdiv")[0]
+    if(top_sib !=null){
+        top_sib.style.borderBottomRightRadius = "0px"
+        }
+        bottom_sib.style.borderTopRightRadius = "0px"
+}
+for (let i in nav_list.children){
+    console.log(nav_list.children[i])
+    if (typeof nav_list.children[i] === "object"){
+        nav_list.children[i].addEventListener("mouseover", siblingRadius)
+        nav_list.children[i].addEventListener("mouseout", reverseSiblingRadius)
+    }
+}
+
+function openSocial(){
+    socialview.style.display = "block"
+    closeOverview()
+    closeTransaction()
+    closeTransfer()
+    closeProfile()
+}
+
+function closeSocial(){
+    socialview.style.display = "none"
+}
+
+function openOverview(){
+    quickTranscationView.style.display = "block"
+    dashboardview.style.display = "block"
+    closeSocial()
+    closeTransaction()
+    closeTransfer()
+    closeProfile()
+}
+function closeOverview(){
+    quickTranscationView.style.display = "none"
+    dashboardview.style.display = "none"
+}
+
+function openTransaction(){
+    historyList.style.display = "block"
+    closeOverview()
+    closeSocial()
+    closeTransfer()
+    closeProfile()
+}
+
+function closeTransaction(){
+    historyList.style.display = "none"
+}
+
+function openTransfer(){
+    transferList.style.display = "block"
+    closeOverview()
+    closeSocial()
+    closeTransaction()
+    closeProfile()
+}
+
+function closeTransfer(){
+    transferList.style.display = "none"
+}
+function openProfile(){
+    profilelist.style.display = "block"
+    closeOverview()
+    closeSocial()
+    closeTransaction()
+    closeTransfer()
+
+}
+
+function closeProfile(){
+    profilelist.style.display = "none"
+
+}
 
 
-/**Social */
-socialul.addEventListener("click",openSocial)
-remove.addEventListener("click",closeSocial)
-/**Transition */
-trans.addEventListener("click",openTransition)
-remove2.addEventListener("click",closeTransition)
-/**Transfer*/
-send.addEventListener("click",openTransfer)
-remove3.addEventListener("click",closeTransfer)
-/**Profile */
-profilename.addEventListener("click",openProfile)
-remove4.addEventListener("click",closeProfile)
+socialclick.addEventListener("click",openSocial)
+overview.addEventListener("click",openOverview)
+transactionlick.addEventListener("click",openTransaction)
+transferclick .addEventListener("click",openTransfer)
+profileclick.addEventListener("click",openProfile)
