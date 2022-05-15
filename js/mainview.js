@@ -61,4 +61,3 @@ loginClose.addEventListener("click", Closelogin)
 bankloginClick.addEventListener("click", Openlogin)
 searchBotton.addEventListener("click",switchDisplay)
 remove.addEventListener("click",removeDisplay)
-    

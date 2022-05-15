@@ -4,6 +4,7 @@ const check = document.getElementsByClassName("look")[0]
 const cancel = document.getElementsByClassName("delete")[0]
 const undo = document.getElementsByClassName("erase")[0]
 const test = document.getElementsByClassName("find")[0]
+
 function switchBars(){
     lastList.style.display="block"
     bars.style.visibility="hidden"
@@ -27,6 +28,8 @@ function closeBar(){
     undo.style.visibility="hidden"
     
 }
+
+
 bars.addEventListener("click",switchBars)
 cancel.addEventListener("click",cancleBar)
 check.addEventListener("click",searchBar)
