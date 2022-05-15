@@ -5,8 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>GTB</title>
-        <link rel="stylesheet" href="css/mainview.css">
-        <link rel="stylesheet" media="screen and (max-width:414px)" href="css/mobile.css">
+        <link rel="stylesheet" href="css/main/mainview.css">
+        <link rel="stylesheet" media="screen and (max-width:414px)" href="css/main/mobile.css">
         <link rel="shortcut icon" href="img/Annotation 2022-04-19 141340.png" type="image/x-icon">
         <script src="https://kit.fontawesome.com/0cd43d1304.js" crossorigin="anonymous"></script>
     </head>
@@ -30,7 +30,7 @@
                     <li class="item"><a href="#">Security</a></li>
                     <li class="item"><i class="fa-solid fa-magnifying-glass icon"></i></li>
                     <div class="lilast">
-                        <li><a href="#">Online Banking Login</a></li> 
+                        <li id="banklogin">Online Banking Login</li> 
                     </div>
                     
                 </ul>
@@ -75,18 +75,66 @@
                     <h2>Online Banking</h2>
                 </div>
                 <div id="text2">
-                    <li><a href="#">Personal</a></li>
-                    <li><a href="#">Business</a></li>
+                    <li id="signup1"><a href="#">Sign Up</a></li>
+                    <li id="login1"><a href="#">Login</a></li>
                 </div>
                 <div id="text3">
-                    <li id="log"><a href="#">Login</a></li>
-                    <div>
-                         <li><a href="#">Register</a></li>
-                        <li><a href="#">Demo</a></li>
-                    </div>
+                     <li><a href="#">Demo</a></li>
                     
                 </div>
 
+            </div>
+            <div class="signUp">
+                <ul>
+                   <div class="signUpList">
+                       <li>First Name</li>
+                       <input class="signUpInput" type="text">
+                   </div>
+                    <div class="signUpList">
+                        <li>Last Name</li>
+                        <input class="signUpInput" type="text">
+                    </div>
+                    <div class="signUpList">
+                        <li>User Name</li>
+                        <input class="signUpInput" type="text">
+                    </div>
+                    <div class="signUpList">
+                        <li>Email</li>
+                        <input class="signUpInput" type="text">
+                    </div>
+                    <div class="signUpList">
+                        <li>Confirm Email</li>
+                        <input class="signUpInput" type="text">
+                    </div>
+                    <div class="signUpList">
+                        <li>Password</li>
+                        <input class="signUpInput" type="password">
+                    </div>
+                    <div class="signUpList">
+                        <li>Comfirm Password</li>
+                        <input class="signUpInput" type="password">
+                    </div>
+                    <h3>Sign up</h3>
+                </ul>
+                <i class="fa-solid fa-x close"></i>
+            </div>
+            <div class="login">
+                <ul>
+                    <div class="loginList">
+                        <li>User Name</li>
+                        <input class="loginInput" type="text">
+                    </div>
+                    <div class="loginList">
+                        <li>Confirm Email</li>
+                        <input class="loginInput" type="text">
+                    </div>
+                    <div class="loginList">
+                        <li>Password</li>
+                        <input class="loginInput" type="password">
+                    </div>
+                    <h3>Login</h3>
+                    <i class="fa-solid fa-x loginClose"></i>
+                </ul>
             </div>
 
         </section>
